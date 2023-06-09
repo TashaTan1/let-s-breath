@@ -23,6 +23,7 @@ let breathingROUNDS = 1;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+ //assign mic input
   mic = new p5.AudioIn();
   mic.start();
 }
@@ -33,9 +34,9 @@ function draw() {
 
   noStroke();
   ellipse(width / 2, 350, 100 + vol * 2000, 100 + vol * 2000);
-
+//timer
   if (frameCount % 60 == 0 && relax > 0) {
-    // if the frameCount is divisible by 60, then a second has passed. it will stop at 0
+    
     relax--;
   }
   if (relaxShow == true) {
@@ -46,7 +47,7 @@ function draw() {
     textSize(50);
     fill(255);
   }
-
+//if relax time is up, show text for breath
   if (relax == 0) {
   relaxShow = false;
   textBreathShow = true;
@@ -133,7 +134,7 @@ function draw() {
       button.position(width / 2 - 200, 200);
       button.mousePressed(function goToAnotherPage() {
         window.location.href =
-          "https://editor.p5js.org/natashatan/sketches/gxSMDJpDT";
+          "https://tashatan1.github.io/let-s-breath/";
       });
       button = createButton("Back to Homepage");
       button.position(width / 2 + 80, 200);
