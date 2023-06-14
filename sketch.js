@@ -43,7 +43,7 @@ function draw() {
     textSize(32);
     textAlign(CENTER);
     textFont("Roboto");
-    text("Relax and find a comfortable position.", width / 2, 80);
+    text("Relax and get into a comfortable position.", width / 2, 80);
     textSize(50);
     fill(255);
   }
