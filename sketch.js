@@ -140,7 +140,7 @@ function draw() {
       button.position(width / 2 + 80, 200);
       button.mousePressed(function goToAnotherPage() {
         window.location.href =
-          "tashatan1.github.io/front-page-/";
+          "https://tashatan1.github.io/front-page-/";
       });
     }
   }
