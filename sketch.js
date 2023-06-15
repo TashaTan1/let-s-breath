@@ -136,7 +136,7 @@ function draw() {
         window.location.href =
           "https://tashatan1.github.io/let-s-breath/";
       });
-      button = createButton("Back to Homepage");
+      button = createButton("Back to Frequencies");
       button.position(width / 2 + 80, 200);
       button.mousePressed(function goToAnotherPage() {
         window.location.href =
